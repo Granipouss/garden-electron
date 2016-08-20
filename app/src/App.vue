@@ -3,8 +3,8 @@
     <header class="window-header">
       <h1 class="window-name">{{ name }}</h1>
 
-      <div id="expand" @click="expand"></div>
-      <div id="reduce" @click="reduce"></div>
+      <div id="expand" @click="expand" v-if="windowActions.expand"></div>
+      <div id="reduce" @click="reduce" v-if="windowActions.reduce"></div>
       <div id="close" @click="close"></div>
     </header>
 
@@ -16,10 +16,10 @@
 
 <script>
 import { remote } from 'electron'
-import { name } from '../../config'
+import { name, windowActions } from '../../config'
 
 export default {
-  data () { return { name } },
+  data () { return { name, windowActions } },
   methods: {
     close () { remote.getCurrentWindow().close() },
     reduce () { remote.getCurrentWindow().minimize() },

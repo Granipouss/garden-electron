@@ -27,6 +27,7 @@ let config = {
     minHeight: 320
   },
 
+  // Show reduce & expand buttons on the main window
   windowActions: {
     reduce: true,
     expand: false
