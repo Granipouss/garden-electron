@@ -34,8 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
+// @import "~css/normalize";
 @import "~css/palette";
-@import "~css/normalize";
 @import "~css/appify";
 
 $header-height: 32px;
@@ -93,5 +93,4 @@ html, body, .window {
     #expand { background-color: palette(Green); }
   }
 }
-
 </style>

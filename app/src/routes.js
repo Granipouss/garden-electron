@@ -1,7 +1,7 @@
 function makeRoute (name, path) {
   if (path == null) path = '/' + name.toLowerCase()
   return {
-    path, name, component: require('components/' + name + 'View')
+    path, name, component: require('views/' + name + 'View')
   }
 }
 makeRoute
@@ -10,7 +10,7 @@ export default [
   makeRoute('Title', '/'),
   {
     path: '/layout',
-    component: require('components/Layout/Layout'),
+    component: require('layout/Layout'),
     children: [
       makeRoute('Home')
     ]

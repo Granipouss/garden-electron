@@ -1,7 +1,7 @@
 <template lang="html">
   <section>
     <router-link to="/home">
-      <h1>Home</h1>
+      <h1>Garden</h1>
       <h2>An Electron Vue Starter&nbsp;Kit</h2>
     </router-link>
   </section>
@@ -9,22 +9,22 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Title'
 }
 </script>
 
 <style lang="scss" scoped>
-@import "~css/palette";
+@import "~css/utils";
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include fullSize;
+  @include centerContent;
   text-align: center;
 
-
-  h1, h2 { margin: 0; }
+  h1, h2 {
+    margin: 0;
+    line-height: 100%;
+  }
 
   h1 {
     text-transform: uppercase;
@@ -41,5 +41,4 @@ section {
     font-size: 14px;
   }
 }
-
 </style>
