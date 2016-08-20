@@ -64,7 +64,7 @@ html, body, .window {
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 2;
+    z-index: 999;
 
     .window-name {
       flex-grow: 1;

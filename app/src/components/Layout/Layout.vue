@@ -1,10 +1,15 @@
 <template lang="html">
   <div class="layout">
+    <side-bar>
+      In the side bar...
+    </side-bar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import SideBar from './SideBar'
+
 export default {
   data: function () {
     return {
@@ -14,7 +19,7 @@ export default {
   ready: function () {},
   attached: function () {},
   methods: {},
-  components: {}
+  components: { SideBar }
 }
 </script>
 
@@ -34,6 +39,9 @@ html {
 
 // Layout
 .layout {
+  @include fullSize;
+  display: flex;
+
   p {
     text-align: justify;
     text-justify: inter-word;
