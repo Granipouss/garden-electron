@@ -1,0 +1,13 @@
+{
+  "name": "Garden",
+  "version": "0.1.0",
+  "description": "An Electron Vue Starter Kit",
+  "main": "electron.js",
+  "dependencies": {
+    "vue": "^2.0.0-rc.2",
+    "vue-router": "^2.0.0-rc.3",
+    "vuex": "^2.0.0-rc.5"
+  },
+  "devDependencies": {},
+  "author": "Graninpouss <granipouss@gmail.com>"
+}
