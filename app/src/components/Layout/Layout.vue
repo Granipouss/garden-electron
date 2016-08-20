@@ -52,6 +52,9 @@ html {
   background-color: $white;
 }
 
+// Font Awesome
+@import "~font-awesome/scss/font-awesome.scss";
+
 // Layout
 .layout {
   position: absolute;
