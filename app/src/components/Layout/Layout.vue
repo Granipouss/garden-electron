@@ -53,7 +53,7 @@ html {
 }
 
 // Font Awesome
-@import "~font-awesome/scss/font-awesome.scss";
+@import "~font-awesome/css/font-awesome.css";
 
 // Layout
 .layout {
