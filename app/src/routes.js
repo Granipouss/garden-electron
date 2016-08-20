@@ -7,6 +7,7 @@ function makeRoute (name, path) {
 makeRoute
 
 export default [
+  makeRoute('Title', '/'),
   {
     path: '/layout',
     component: require('components/Layout/Layout'),
