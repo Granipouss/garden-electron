@@ -59,8 +59,12 @@ html, body, .window {
     height: $header-height;
     padding: 0 $header-height / 2;
     -webkit-app-region: drag;
-    background-color:  palette(Grey, 50);
-    box-shadow: 0 2px 3px palette(Black, Dividers);
+    box-shadow: 0 2px 3px palette(Black, Disabled);
+    border-bottom: 1px solid palette(White);
+    background:  palette(Grey, 50);
+    background: linear-gradient(to bottom,
+        palette(Grey, 50) 0%,
+        palette(Grey, 200) 100%);
     display: flex;
     flex-direction: row;
     align-items: center;
