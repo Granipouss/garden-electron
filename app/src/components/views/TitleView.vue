@@ -1,10 +1,8 @@
 <template lang="html">
-  <section>
-    <router-link to="/home">
-      <h1>Garden</h1>
-      <h2>An Electron Vue Starter&nbsp;Kit</h2>
-    </router-link>
-  </section>
+  <router-link to="/home">
+    <h1>Garden</h1>
+    <h2>An Electron Vue Starter&nbsp;Kit</h2>
+  </router-link>
 </template>
 
 <script>
@@ -16,9 +14,10 @@ export default {
 <style lang="scss" scoped>
 @import "~css/utils";
 
-section {
+a {
   @include fullSize;
   @include centerContent;
+  flex-direction: column;
   text-align: center;
 
   h1, h2 {
