@@ -12,7 +12,9 @@ export default [
     path: '/layout',
     component: require('layout/Layout'),
     children: [
-      makeRoute('Home')
+      makeRoute('Home'),
+      makeRoute('Foo'),
+      makeRoute('Bar')
     ]
   },
   { path: '*', redirect: '/home' }

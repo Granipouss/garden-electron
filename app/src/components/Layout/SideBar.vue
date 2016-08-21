@@ -1,7 +1,7 @@
 <template lang="html">
   <aside class="sidebar" :class="{ 'collapsed': collapsed }">
     <div class="opener" @click="open">
-      <span class="icon">
+      <span class="icon is-primary">
         <i class="fa fa-bars"></i>
       </span>
     </div>
@@ -15,6 +15,9 @@
 <script>
 export default {
   data () { return { collapsed: true } },
+  mounted () {
+    this.$router.afterEach(this.close)
+  },
   methods: {
     open () { this.collapsed = false },
     close () { this.collapsed = true }
@@ -52,7 +55,7 @@ $full-width: 240px;
     width: $collapsed-width;
     text-align: center;
     padding-top: 6px;
-    color: palette(Black, Hint Text);
+    color: $primary;
   }
 
   .overlay {
