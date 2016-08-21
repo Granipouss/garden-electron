@@ -36,16 +36,14 @@ import BulmaMenuItem from './Item'
 
 export default {
   props: { items: { type: Array } },
-  data () {
-    return { expandIndex: -1, subHeights: [] }
-  },
+  data () { return { expandIndex: -1, subHeights: [] } },
   mounted: function () {
-    this.$el.querySelectorAll('.sub-menu').forEach(el => { this.subHeights[el.dataset.index] = el.scrollHeight })
+    this.$el.querySelectorAll('.sub-menu').forEach(el => {
+      this.subHeights[el.dataset.index] = el.scrollHeight
+    })
   },
   methods: {
-    toggle (index) {
-      this.expandIndex = this.expandIndex === index ? -1 : index
-    }
+    toggle (index) { this.expandIndex = this.expandIndex === index ? -1 : index }
   },
   components: { BulmaMenuItem }
 }
