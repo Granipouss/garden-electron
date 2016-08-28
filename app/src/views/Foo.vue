@@ -13,6 +13,13 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  routerOptions: {
+    layout: 'default',
+    params: '/:foo?'
+  },
+  mounted () {
+    console.log(this.$route)
+  }
 }
 </script>

@@ -8,7 +8,7 @@ export default [
   makeRoute('Title', '/'),
   {
     path: '/layout',
-    component: require('layout/default'),
+    component: require('layouts/default'),
     children: [
       makeRoute('Home'),
       makeRoute('Foo'),

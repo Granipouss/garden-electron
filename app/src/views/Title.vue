@@ -8,7 +8,10 @@
 <script>
 export default {
   name: 'Title',
-  layout: false
+  routerOptions: {
+    layout: false,
+    path: '/'
+  }
 }
 </script>
 
