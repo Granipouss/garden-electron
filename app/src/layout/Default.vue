@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import SideBar from './SideBar'
-import BulmaMenu from 'components/Menu/Menu'
+import SideBar from 'components/SideBar'
+import BulmaMenu from 'components/Bulma/Menu'
 
 export default {
   data: function () {
