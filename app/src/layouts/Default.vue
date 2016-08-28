@@ -7,13 +7,12 @@
 
           { label: 'Administration', kind: 'category' },
           { label: 'Manage Your Team', submenu: [
-            { label: 'Members', link: '/foo' },
-            { label: 'Plugins', link: '/bar' },
+            { label: 'Foo', link: '/foo' },
+            { label: 'Bar', link: '/bar' },
             { label: 'Add a member', link: '/bar' }
           ] },
-          { label: 'Invitations', submenu: [
-            { label: 'Foo', link: '/foo' },
-            { label: 'Bar', link: '/bar' }
+          { label: 'Features', submenu: [
+            { label: 'Store', link: '/store' }
           ] },
           { label: 'Authentication', link: '/bar' },
 

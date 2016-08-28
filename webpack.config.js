@@ -48,9 +48,10 @@ let config = {
   },
   resolve: {
     alias: {
+      'components': path.join(__dirname, 'app/src/components'),
       'layouts': path.join(__dirname, 'app/src/layouts'),
       'views': path.join(__dirname, 'app/src/views'),
-      'components': path.join(__dirname, 'app/src/components'),
+      'store': path.join(__dirname, 'app/src/store'),
       'assets': path.join(__dirname, 'app/src/assets'),
       'css': path.join(__dirname, 'app/src/assets/css'),
       'img': path.join(__dirname, 'app/src/assets/img'),
