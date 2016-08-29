@@ -53,6 +53,7 @@ let config = {
     alias: {
       'components': path.join(__dirname, 'app/src/components'),
       'layouts': path.join(__dirname, 'app/src/layouts'),
+      'models': path.join(__dirname, 'app/src/models'),
       'views': path.join(__dirname, 'app/src/views'),
       'store': path.join(__dirname, 'app/src/store'),
       'assets': path.join(__dirname, 'app/src/assets'),

@@ -4,11 +4,17 @@ Vue.config.debug = true
 
 import router from 'lib/router'
 import store from 'lib/store'
-import 'lib/database'
+import db from 'lib/database'
 
-/* eslint-disable no-new */
-new Vue({
-  router,
-  store,
-  ...App
-}).$mount('#app')
+db.init(
+  () => {
+    console.log('Database loaded')
+
+    /* eslint-disable no-new */
+    new Vue({
+      router,
+      store,
+      ...App
+    }).$mount('#app')
+  }
+)

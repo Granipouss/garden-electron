@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import Dog from 'models/Dog'
+
 export default {
   name: 'Home',
   routerOptions: {
@@ -20,6 +22,7 @@ export default {
   },
   mounted () {
     console.log(this.$route)
+    Dog.find({}, docs => console.log(docs))
   }
 }
 </script>
