@@ -9,12 +9,15 @@ import db from 'lib/database'
 db.init(
   () => {
     console.log('Database loaded')
-
-    /* eslint-disable no-new */
-    new Vue({
-      router,
-      store,
-      ...App
-    }).$mount('#app')
+    launchApp()
   }
 )
+
+function launchApp () {
+  /* eslint-disable no-new */
+  new Vue({
+    router,
+    store,
+    ...App
+  }).$mount('#app')
+}
