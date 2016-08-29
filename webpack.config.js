@@ -18,7 +18,9 @@ let config = {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
       { test: /\.html$/, loader: 'vue-html-loader' },
+      { test: /\.node$/, loader: 'node-loader' },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.js$/, loader: 'babel-loader', include: /camo/ }, // Camo fix
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.vue$/, loader: 'vue-loader' },
       {
@@ -40,7 +42,8 @@ let config = {
       template: './app/main.ejs',
       title: settings.name
     }),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/vertx/)
   ],
   output: {
     filename: '[name].js',
@@ -59,7 +62,7 @@ let config = {
       'lib': path.join(__dirname, 'app/src/lib'),
       'src': path.join(__dirname, 'app/src')
     },
-    extensions: ['', '.js', '.vue', '.json', '.css'],
+    extensions: ['', '.js', '.node', '.vue', '.json', '.css'],
     fallback: [path.join(__dirname, 'app/node_modules')]
   },
   resolveLoader: { root: path.join(__dirname, 'node_modules') },

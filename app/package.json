@@ -5,8 +5,10 @@
   "main": "electron.js",
   "dependencies": {
     "bulma": "^0.1.2",
+    "camo": "^0.12.2",
     "font-awesome": "^4.6.3",
     "lodash": "^4.15.0",
+    "nedb": "^1.8.0",
     "vue": "^2.0.0-rc.2",
     "vue-router": "^2.0.0-rc.3",
     "vuex": "^2.0.0-rc.5"
