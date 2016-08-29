@@ -22,7 +22,7 @@ export default {
   },
   mounted () {
     console.log(this.$route)
-    Dog.find({}, docs => console.log(docs))
+    Dog.find({}).then(docs => console.log(docs))
   }
 }
 </script>
