@@ -15,24 +15,6 @@ let config = {
   // webpack-dev-server port
   port: 9080,
 
-  // Options for the main window
-  windowOptions: {
-    frame: false,
-    titleBarStyle: 'hidden',
-    useContentSize: true,
-    acceptFirstMouse: true,
-    width: 800,
-    height: 600,
-    minWidth: 420,
-    minHeight: 320
-  },
-
-  // Show reduce & expand buttons on the main window
-  windowActions: {
-    reduce: true,
-    expand: false
-  },
-
   // electron-packager options
   // Docs: https://simulatedgreg.gitbooks.io/electron-vue/content/docs/building_your_app.html
   building: {

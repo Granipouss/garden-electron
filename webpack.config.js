@@ -61,7 +61,8 @@ let config = {
       'img': path.join(__dirname, 'app/src/assets/img'),
       'font': path.join(__dirname, 'app/src/assets/font'),
       'lib': path.join(__dirname, 'app/src/lib'),
-      'src': path.join(__dirname, 'app/src')
+      'src': path.join(__dirname, 'app/src'),
+      'app': path.join(__dirname, 'app')
     },
     extensions: ['', '.js', '.node', '.vue', '.json', '.css'],
     fallback: [path.join(__dirname, 'app/node_modules')]

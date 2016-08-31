@@ -16,7 +16,7 @@
 
 <script>
 import { remote } from 'electron'
-import { name, windowActions } from '../../config'
+import { name, windowActions } from 'app/config'
 
 export default {
   data () { return { name, windowActions } },

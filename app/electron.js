@@ -6,10 +6,10 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
 let mainWindow
-let config = {}
+let config = require('./config')
 
 if (process.env.NODE_ENV === 'development') {
-  config = require('../config')
+  Object.assign(config, require('../config'))
   config.url = `http://localhost:${config.port}`
 } else {
   config.devtron = false

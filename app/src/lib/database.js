@@ -1,8 +1,9 @@
 import { remote } from 'electron'
 import path from 'path'
 import { connect } from 'camo'
+import config from 'app/config'
 
-const uri = 'nedb://' + path.join(remote.app.getPath('userData'), 'gardenDB')
+const uri = 'nedb://' + path.join(remote.app.getPath('userData'), config.name, 'db')
 const database = {
   init (cb) {
     connect(uri).then(db => {
